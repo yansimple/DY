@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Danil Yanzin Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Shadows+Into+Light&display=swap');
+
+        body {
+            background-color: #1e1e1e;
+            font-family: 'Shadows Into Light', cursive;
+            color: #00ffae;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        h1, h2, h3 {
+            font-family: 'Dancing Script', cursive;
+            color: #ffae00;
+            text-align: left;
+        }
+        p, ul {
+            color: #00ffae;
+            text-align: left;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            text-align: left;
+        }
+        .lang-switch {
+            display: flex;
+            justify-content: flex-start;
+            margin: 20px 0;
+        }
+        .lang-switch button {
+            background-color: #ffae00;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .lang-switch button:hover {
+            background-color: #ff4500;
+        }
+        .resume-content {
+            display: none;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+        .active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .lang-switch button {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Danil Yanzin Resume</h1>
+    
+    <div class="lang-switch">
+        <button onclick="switchLang('en')">English</button>
+        <button onclick="switchLang('ru')">Русский</button>
+    </div>
+
+    <!-- English Resume -->
+    <div id="resume-en" class="resume-content active">
+        <h2>About Me</h2>
+        <p>I am Danil Yanzin, a dedicated professional specializing in digital marketing and media buying with a focus on in-app and social media advertising (TikTok, Facebook, Unity Ads).
+        With over 5 years of experience in the IT industry, business process automation, and launching high-performing ad campaigns, I excel in traffic monetization, utilizing various advertising platforms, 
+        setting up trackers, and analyzing campaign performance.</p>
+
+        <h2>Work Experience</h2>
+        <h3>Head of Search Feed Ads - Adnow, Bulgaria (July 2024 – Present)</h3>
+        <ul>
+            <li>Monetizing traffic and automating profit streams.</li>
+            <li>Managing external projects under strict NDA agreements.</li>
+            <li>Implementing new traffic optimization strategies to enhance performance.</li>
+        </ul>
+        <h3>Aff Manager, Media Buyer - 1Xbet, Saint Petersburg (November 2022 – June 2024)</h3>
+        <ul>
+            <li>Launched and managed ad campaigns targeting African and Latin American markets.</li>
+            <li>Identified and onboarded new affiliates and publishers into the partner program.</li>
+            <li>Managed advertising budgets and optimized creative assets for better ROI.</li>
+        </ul>
+
+        <h2>Education</h2>
+        <p>Saint Petersburg Polytechnic University of Peter the Great (Incomplete Higher Education), 2021</p>
+        <p>International Banking Institute, Saint Petersburg (Banking, Economist), 2016</p>
+
+        <h2>Key Skills</h2>
+        <ul>
+            <li>Media Buying (Facebook Ads, TikTok Ads, Unity Ads, Vungle, IS, Google Ads)</li>
+            <li>Traffic Monetization & Analytics</li>
+            <li>Advertising Platforms: Propeller Ads, StartApp, Binom</li>
+            <li>Keitaro TDS: Traffic Filtering System Setup</li>
+            <li>Linux Server Administration</li>
+            <li>Ad Tracker Setup & Management</li>
+        </ul>
+    </div>
+
+    <!-- Russian Resume -->
+    <div id="resume-ru" class="resume-content">
+        <h2>Обо мне</h2>
+        <p>Меня зовут Данил Янзин, я специализируюсь на цифровом маркетинге и медиа-байинге с фокусом на рекламу в приложениях и социальных сетях (TikTok, Facebook, Unity Ads).
+        Обладаю более 5 лет опыта в IT-сфере, автоматизации бизнес-процессов и создании эффективных рекламных кампаний. Мои ключевые компетенции включают монетизацию трафика, работу с различными рекламными платформами,
+        настройку трекеров и анализ результатов кампаний.</p>
+
+        <h2>Опыт работы</h2>
+        <h3>Руководитель отдела Search Feed Ads - Adnow, Болгария (Июль 2024 – настоящее время)</h3>
+        <ul>
+            <li>Монетизация трафика и автоматизация прибыли.</li>
+            <li>Управление внешними проектами под строгими условиями NDA.</li>
+            <li>Внедрение новых стратегий оптимизации трафика для повышения эффективности.</li>
+        </ul>
+        <h3>Aff Manager, Media Buyer - 1Xbet, Санкт-Петербург (Ноябрь 2022 – Июнь 2024)</h3>
+        <ul>
+            <li>Запуск и управление рекламными кампаниями, нацеленными на рынки Африки и Латинской Америки.</li>
+            <li>Поиск и подключение новых аффилиатов и паблишеров в партнерскую программу.</li>
+            <li>Управление рекламными бюджетами и оптимизация креативных материалов для увеличения ROI.</li>
+        </ul>
+
+        <h2>Образование</h2>
+        <p>Санкт-Петербургский политехнический университет Петра Великого (незаконченное высшее образование), 2021</p>
+        <p>Международный банковский институт, Санкт-Петербург (Банковское дело, экономист), 2016</p>
+
+        <h2>Ключевые навыки</h2>
+        <ul>
+            <li>Медиа-байинг (Facebook Ads, TikTok Ads, Unity Ads, Vungle, IS, Google Ads)</li>
+            <li>Монетизация трафика и аналитика</li>
+            <li>Рекламные платформы: Propeller Ads, StartApp, Binom</li>
+            <li>Keitaro TDS: Настройка систем фильтрации трафика</li>
+            <li>Администрирование серверов Linux</li>
+            <li>Настройка и управление рекламными трекерами</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function switchLang(lang) {
+        const enContent = document.getElementById('resume-en');
+        const ruContent = document.getElementById('resume-ru');
+        if (lang === 'en') {
+            enContent.classList.add('active');
+            ruContent.classList.remove('active');
+        } else {
+            ruContent.classList.add('active');
+            enContent.classList.remove('active');
+        }
+    }
+</script>
+
+</body>
+</html>
